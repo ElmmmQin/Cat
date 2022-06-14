@@ -1,3 +1,11 @@
+<!--
+ * @Author: qinyushan
+ * @Date: 2022-06-13 17:28:02
+ * @LastEditTime: 2022-06-14 16:34:59
+ * @LastEditors: qinyushan
+ * @FilePath: \Cat\index.html
+ * @Description: 
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,8 +14,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>豹子的二维码</title>
-    <link rel="stylesheet" href="./style.css">
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=8tmLINbhCmz0hCPo1u10eih5L7p5Xk9C"></script>
 </head>
 
 <body>
@@ -48,30 +56,7 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-//             var templateParams = {
-//                 name: 'James',
-//                 notes: 'Check this out!'
-//             };
-//             emailjs.init("yd_HaLFcgs7oYWAKe");
-//             emailjs.send('service_0opwp5p', 'template_zm485ff', templateParams)
-//                 .then(function (response) {
-//                     console.log('SUCCESS!', response.status, response.text);
-//                 }, function (error) {
-//                     console.log('FAILED...', error);
-//                 });
-                        function plusReady(){  
-              alert( "IMEI: " + plus.device.imei );  
-            }  
-            if(window.plus){  
-              plusReady();  
-            }else{  
-              document.addEventListener("plusready",plusReady,false);  
-            }  
-        })();
-    </script>
+
 </body>
 
 </html>

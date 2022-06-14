@@ -1,9 +1,9 @@
 /*
  * @Author: qinyushan
  * @Date: 2022-04-08 16:19:53
- * @LastEditTime: 2022-04-11 16:00:05
+ * @LastEditTime: 2022-06-14 17:08:11
  * @LastEditors: qinyushan
- * @FilePath: \cat\webpack.config.js
+ * @FilePath: \Cat\webpack.config.js
  * @Description: 
  */
 const path = require('path')
@@ -19,6 +19,7 @@ module.exports = {
     },
 
     mode: 'none',
+    // mode: 'production',
 
     plugins: [
         new HtmlWebpackPlugin({
@@ -26,5 +27,14 @@ module.exports = {
             filename: 'index.html',
             inject: 'head'
         })
-    ]
+    ],
+
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            }
+        ]
+    }
 }
