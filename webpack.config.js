@@ -1,7 +1,7 @@
 /*
  * @Author: qinyushan
  * @Date: 2022-04-08 16:19:53
- * @LastEditTime: 2022-06-14 17:08:11
+ * @LastEditTime: 2022-06-14 17:23:09
  * @LastEditors: qinyushan
  * @FilePath: \Cat\webpack.config.js
  * @Description: 
@@ -18,8 +18,8 @@ module.exports = {
         clean: true
     },
 
-    mode: 'none',
-    // mode: 'production',
+    // mode: 'none',
+    mode: 'production',
 
     plugins: [
         new HtmlWebpackPlugin({
